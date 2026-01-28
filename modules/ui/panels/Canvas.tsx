@@ -1,9 +1,16 @@
+import { cn } from "@/common/utils";
 import { ZoomIn, ZoomOut } from "lucide-react";
+import { Noto_Sans, Poppins, Ubuntu_Sans } from "next/font/google";
+
+const canvasFont = Ubuntu_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Canvas() {
   return (
     <div className="flex flex-1 flex-col bg-neutral-700">
-      <div className="flex h-12 items-center justify-between border-b border-neutral-700 bg-neutral-800 px-4">
+      <div className="-mt-0.5 flex h-12 items-center justify-between border-b-2 border-neutral-700 bg-neutral-800 px-4">
         <div className="flex items-center gap-2">
           <span className="text-sm text-neutral-400">Canvas</span>
         </div>
@@ -22,10 +29,13 @@ export default function Canvas() {
       </div>
 
       <div className="flex-1 overflow-auto p-8">
-        <div className="flex min-h-full items-center justify-center">
+        <div className="flex min-h-full items-center justify-center pb-16">
           <div
-            className="bg-white shadow-2xl"
-            style={{ width: "595px", height: "842px" }}
+            className={cn("bg-white shadow-2xl", canvasFont.className)}
+            style={{
+              width: "595px",
+              height: "842px",
+            }}
           >
             <div className="flex h-full flex-col p-12">
               <div className="mb-6 border-b-2 border-neutral-200 pb-6">
