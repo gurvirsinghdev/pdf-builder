@@ -10,7 +10,7 @@ const canvasFont = Ubuntu_Sans({
 export default function Canvas() {
   return (
     <div className="flex flex-1 flex-col bg-neutral-700">
-      <div className="-mt-0.5 flex h-12 items-center justify-between border-b-2 border-neutral-700 bg-neutral-800 px-4">
+      <div className="flex h-12 items-center justify-between border-b-2 border-neutral-700 bg-neutral-800 px-4">
         <div className="flex items-center gap-2">
           <span className="text-sm text-neutral-400">Canvas</span>
         </div>

@@ -234,7 +234,7 @@ export default function MainPanel() {
   const [selectedPageNumber, setSelectedPageNumber] = useState<number>(1);
 
   return (
-    <div className="flex w-64 flex-col border-r border-neutral-700 bg-neutral-800">
+    <div className="flex min-w-64 max-w-64 w-64 flex-col border-r border-neutral-700 bg-neutral-800">
       <div className="flex border-b border-neutral-700">
         {(
           [
